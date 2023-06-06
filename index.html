@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <title>Coding Quiz</title>
+
+   <link rel="stylesheet" href="assets/style.css"/>
+
 </head>
-<body>
+<header>
+    <div class="scores"><a
+        href="highschores.html">View Highschores</a></div>
     
+    <div class="timer">Time: <span id="time-left">0</span></div>
+</header>
+
+<body>
+    <!--QuizBox-->
+    <main class= "container">
+        <div id="begin-quiz" class="start">
+            <h1>Coding Quiz</h1>
+            <p>Try to answer the following  code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 15 seconds!
+            </p>
+            <!--Start Button-->
+            <button id="start">Start Quiz!</button>
+        </div>
+
+        <div class="loaded"></div>
+
+        <div id="questions" class="hide">
+            <h2 id="question-title">What is your name?</h2>
+            <div id="choices" class="choices">Dennis</div>
+        </div>
+
+        <footer id="end-screen" class="hide">
+            <h2>All Done!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>Enter initials: <input type="text" id="initials" max="3"/>
+            <button id="submit">Submit</button>
+        </footer>
+    </main>
+    <script src="./assets/questions.js"></script>
+    <script src="./assets/logic.js"></script>
 </body>
 </html>
+<!--
+    1.start button
+    2. timer feature
+    3.Info box pops up with rules to game
+    4. "continue" button to get to first question.
+    WILL NEED AN HTML WITH HIGH SCORES
+    5. prompt box with first question and the multiple choice answers (this is if/then)
+    6. feature that takes 15 seconds off for every missed answer
+    7. starts with 75 seconds on clock
+    8. alert box that says 'correct' or 'incorrect'
+    9. show results
+    10. prompt box to input initials
+--> 

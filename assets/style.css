@@ -1,0 +1,23 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+button {
+    display: block;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 25;
+    cursor: pointer;
+}
+
+
+.timer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.hide {
+    display: none;
+}
